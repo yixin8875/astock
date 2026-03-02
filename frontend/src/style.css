@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "IBM Plex Sans", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --accent-50: 239 246 255;
+  --accent-100: 219 234 254;
+  --accent-200: 191 219 254;
+  --accent-300: 147 197 253;
+  --accent-500: 59 130 246;
+  --accent-600: 37 99 235;
+  --accent-700: 29 78 216;
+  --accent-50-hex: #eff6ff;
+  --accent-100-hex: #dbeafe;
+  --accent-200-hex: #bfdbfe;
+  --accent-300-hex: #93c5fd;
+  --accent-500-hex: #3b82f6;
+  --accent-600-hex: #2563eb;
+  --accent-700-hex: #1d4ed8;
+}
+
+.theme-blue {
+  --accent-50: 239 246 255;
+  --accent-100: 219 234 254;
+  --accent-200: 191 219 254;
+  --accent-300: 147 197 253;
+  --accent-500: 59 130 246;
+  --accent-600: 37 99 235;
+  --accent-700: 29 78 216;
+  --accent-50-hex: #eff6ff;
+  --accent-100-hex: #dbeafe;
+  --accent-200-hex: #bfdbfe;
+  --accent-300-hex: #93c5fd;
+  --accent-500-hex: #3b82f6;
+  --accent-600-hex: #2563eb;
+  --accent-700-hex: #1d4ed8;
+}
+
+.theme-emerald {
+  --accent-50: 236 253 245;
+  --accent-100: 209 250 229;
+  --accent-200: 167 243 208;
+  --accent-300: 110 231 183;
+  --accent-500: 16 185 129;
+  --accent-600: 5 150 105;
+  --accent-700: 4 120 87;
+  --accent-50-hex: #ecfdf5;
+  --accent-100-hex: #d1fae5;
+  --accent-200-hex: #a7f3d0;
+  --accent-300-hex: #6ee7b7;
+  --accent-500-hex: #10b981;
+  --accent-600-hex: #059669;
+  --accent-700-hex: #047857;
+}
+
+.theme-indigo {
+  --accent-50: 238 242 255;
+  --accent-100: 224 231 255;
+  --accent-200: 199 210 254;
+  --accent-300: 165 180 252;
+  --accent-500: 99 102 241;
+  --accent-600: 79 70 229;
+  --accent-700: 67 56 202;
+  --accent-50-hex: #eef2ff;
+  --accent-100-hex: #e0e7ff;
+  --accent-200-hex: #c7d2fe;
+  --accent-300-hex: #a5b4fc;
+  --accent-500-hex: #6366f1;
+  --accent-600-hex: #4f46e5;
+  --accent-700-hex: #4338ca;
+}
+
+.theme-slate {
+  --accent-50: 248 250 252;
+  --accent-100: 241 245 249;
+  --accent-200: 226 232 240;
+  --accent-300: 203 213 225;
+  --accent-500: 100 116 139;
+  --accent-600: 71 85 105;
+  --accent-700: 51 65 85;
+  --accent-50-hex: #f8fafc;
+  --accent-100-hex: #f1f5f9;
+  --accent-200-hex: #e2e8f0;
+  --accent-300-hex: #cbd5e1;
+  --accent-500-hex: #64748b;
+  --accent-600-hex: #475569;
+  --accent-700-hex: #334155;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+.shadow-theme-card {
+  box-shadow: 0 14px 40px -24px rgb(var(--accent-600) / 0.35);
+}
+
+.bg-blue-50 {
+  background-color: var(--accent-50-hex);
+}
+
+.bg-blue-100 {
+  background-color: var(--accent-100-hex);
+}
+
+.bg-blue-600 {
+  background-color: var(--accent-600-hex);
+}
+
+.bg-blue-700 {
+  background-color: var(--accent-700-hex);
+}
+
+.text-blue-500 {
+  color: var(--accent-500-hex);
+}
+
+.text-blue-600 {
+  color: var(--accent-600-hex);
+}
+
+.text-blue-700 {
+  color: var(--accent-700-hex);
+}
+
+.border-blue-50 {
+  border-color: var(--accent-50-hex);
+}
+
+.border-blue-100 {
+  border-color: var(--accent-100-hex);
+}
+
+.border-blue-200 {
+  border-color: var(--accent-200-hex);
+}
+
+.border-blue-300 {
+  border-color: var(--accent-300-hex);
+}
+
+.ring-blue-100 {
+  --tw-ring-color: var(--accent-100-hex);
+}
+
+.ring-blue-200 {
+  --tw-ring-color: var(--accent-200-hex);
+}
+
+.focus-visible\:ring-blue-100:focus-visible {
+  --tw-ring-color: var(--accent-100-hex);
+}
+
+.focus-visible\:ring-blue-300:focus-visible {
+  --tw-ring-color: var(--accent-300-hex);
+}
+
+.hover\:bg-blue-50:hover {
+  background-color: var(--accent-50-hex);
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: var(--accent-700-hex);
+}
